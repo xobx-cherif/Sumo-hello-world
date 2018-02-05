@@ -20,7 +20,7 @@ This step consists creating a route file.
     1.1. The nodes file (<projName>.nod.xml)
     All nodes have a location (x- and y-coordinate, describing distance to the origin in meters) and an id for future reference.            
     Thus our simple node file looks as follows 
-    
+    ```xml
     <nodes >
     <node id="0" x="0.0" y="0.0" type="traffic_light"/>
     <node id="1" x="-500.0" y="0.0" type="priority"/>
@@ -32,6 +32,7 @@ This step consists creating a route file.
     <node id="53" x="0.0" y="-510.0" type="priority"/>
     <node id="54" x="0.0" y="+510.0" type="priority"/> 
     </nodes>
+    ```
             <projName>.edg.xml
 
     A route definition (<projName>.rou.xml)
