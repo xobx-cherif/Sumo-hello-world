@@ -15,8 +15,9 @@ This step consists creating a route file.
 # Steps
 
 ## Generating the street network file
-1.To Generate a network (<projName>.net.xml), to build a network we need some other files like:
-1.1.The nodes file (<projName>.nod.xml)
+1. To Generate a network (<projName>.net.xml), to build a network we need some other files like:
+
+1.1. The nodes file (<projName>.nod.xml)
     All nodes have a location (x- and y-coordinate, describing distance to the origin in meters) and an id for future reference.        Thus our simple node file looks as follows 
 
             <projName>.edg.xml
