@@ -33,7 +33,8 @@ This step consists creating a route file.
     <node id="54" x="0.0" y="+510.0" type="priority"/> 
     </nodes>
     ```
-            <projName>.edg.xml
+    1.2. the edges file (<projName>.edg.xml)
+    Now we are connect the nodes using the edges. This is as easy as it sounds. We have a source node id, a target node id, and an edge id for future reference. Edges are directed, thus every vehicle travelling this edge will start at the node given in from and end at the node given in to. 
 
     A route definition (<projName>.rou.xml)
 
