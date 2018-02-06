@@ -64,7 +64,7 @@ This step consists creating a route file.
      ```
     1.3. Now that we have nodes and edges we can call the first SUMO tool to create a network. Make sure NETCONVERT is somewhere in your PATH and call 
 
-    ```bash
+    ```shell
     netconvert --node-files=test.nod.xml --edge-files=test.edg.xml --output-file=test.net.xml
     ```
 
@@ -73,17 +73,17 @@ This step consists creating a route file.
 Now that we have a net, we still need a car. In SUMO the vehicles have types defining their basic properties such as length, acceleration and deceleration, and maximum speed. Furthermore it needs a so called sigma parameter which introduces some random behavior and is due to the car following model used. Setting it to 0 gives a deterministic car. 
 We define a route for our car which simply consists of the edges we defined. 
 
-    ```xml
-    <routes>
-    <vehicles>
-    <flow id="f11" begin="0" end="10000" from="1i" to="1o" probability="0.1"/>
-    <flow id="f12" begin="0" end="10000" from="1i" to="2o" probability="0.5"/>
-    <flow id="f14" begin="0" end="10000" from="1i" to="4o" probability="0.5"/>
-    <flow id="f21" begin="0" end="10000" from="2i" to="1o" probability="0.5"/>
-    <flow id="f34" begin="0" end="10000" from="3i" to="4o" probability="0.5"/>
-    <flow id="f43" begin="0" end="10000" from="4i" to="3o" probability="0.5"/>
-    </vehicles>
-    </routes>
-    ```
+```xml
+<routes>
+<vehicles>
+<flow id="f11" begin="0" end="10000" from="1i" to="1o" probability="0.1"/>
+<flow id="f12" begin="0" end="10000" from="1i" to="2o" probability="0.5"/>
+<flow id="f14" begin="0" end="10000" from="1i" to="4o" probability="0.5"/>
+<flow id="f21" begin="0" end="10000" from="2i" to="1o" probability="0.5"/>
+<flow id="f34" begin="0" end="10000" from="3i" to="4o" probability="0.5"/>
+<flow id="f43" begin="0" end="10000" from="4i" to="3o" probability="0.5"/>
+</vehicles>
+</routes>
+```
   
 
