@@ -1,5 +1,8 @@
 # Sumo-hello-world
 This is a short tutorial to get started with the SUMO simulator.
+We will build the following road scheme and add some vehicules and simulate the scenario.
+
+![Schenario](https://github.com/xobx-cherif/Sumo-hello-world/blob/master/Capture%20d%E2%80%99%C3%A9cran_2018-02-06_14-22-52.png)
 
 # Overview
 
