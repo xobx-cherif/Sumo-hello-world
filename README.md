@@ -85,5 +85,30 @@ We define a route for our car which simply consists of the edges we defined.
 </vehicles>
 </routes>
 ```
-  
+## Configuration file
+Now we glue everything together into a configuration file where we mention our net file and edge file in a file *.sumocfg
+
+```xml
+<configuration>
+    <input>
+        <net-file value="test.net.xml"/>
+        <route-files value="test.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+    </time>
+</configuration>
+```
+Now we are ready to lunch the simulation by either :
+
+```shell
+sumo -c test.sumocfg
+```
+or with GUI by :
+
+```shell
+sumo-gui -c test.sumocfg
+```
+
 
